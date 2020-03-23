@@ -1,0 +1,60 @@
+{
+	"info": {
+		"_postman_id": "5e797b70-bd70-4420-9f48-02197325ce3f",
+		"name": "conversion-service",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "conversion-service - Basic",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8100/currency-conversion/from/EUR/to/INR/quantity/1000",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8100",
+					"path": [
+						"currency-conversion",
+						"from",
+						"EUR",
+						"to",
+						"INR",
+						"quantity",
+						"1000"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "conversion-service - Feign",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8100/currency-conversion-feign/from/EUR/to/USD/quantity/1600",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8100",
+					"path": [
+						"currency-conversion-feign",
+						"from",
+						"EUR",
+						"to",
+						"USD",
+						"quantity",
+						"1600"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

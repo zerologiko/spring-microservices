@@ -1,0 +1,30 @@
+{
+	"info": {
+		"_postman_id": "58e7cbad-ec3b-4e4b-b457-f92c1446d9ab",
+		"name": "Zipkin server",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Zipkin tracing home (from browser)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9411/zipkin/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9411",
+					"path": [
+						"zipkin",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

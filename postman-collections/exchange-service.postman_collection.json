@@ -1,0 +1,117 @@
+{
+	"info": {
+		"_postman_id": "33d14f92-8f1f-4604-9f3d-12e945b4e800",
+		"name": "exchange-service",
+		"description": "Exchange service\n",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "exchange from EUR to INR - port 8000",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8000/currency-exchange/from/EUR/to/INR",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"currency-exchange",
+						"from",
+						"EUR",
+						"to",
+						"INR"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "exchange service H2 in memory DB",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8000/h2-console",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"h2-console"
+					]
+				},
+				"description": "Open in Browser"
+			},
+			"response": []
+		},
+		{
+			"name": "exchange from EUR to INR - port 8001",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8001/currency-exchange/from/EUR/to/INR",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8001",
+					"path": [
+						"currency-exchange",
+						"from",
+						"EUR",
+						"to",
+						"INR"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "8c7063ee-bd09-4ca5-8b89-c57a9dc58671",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "437b9f63-40db-4256-9a96-6c6b8b36e84f",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"protocolProfileBehavior": {}
+}
