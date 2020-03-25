@@ -1,0 +1,1 @@
+This is the git repository that store configuration used by Spring Configuration Server.
