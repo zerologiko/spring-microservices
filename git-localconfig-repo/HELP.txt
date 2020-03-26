@@ -1,1 +1,2 @@
-This is the git repository that store configuration used by Spring Configuration Server.
+This is the Git repository that store configuration used by Spring Configuration Server.
+This folder must be moved and initialized as a standalone Git repo.
